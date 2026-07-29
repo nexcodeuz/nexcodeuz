@@ -1,0 +1,1091 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NexCode</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  </head>
+  <body>
+    <!-- Задний фон  -->
+    <canvas id="network"></canvas>
+    <div class="grid-overlay"></div>
+
+<header class="header">
+  <div class="container header-inner">
+    <!-- LOGO -->
+    <a href="#" class="logo">
+      <img
+        src="./assets/image/logo.svg"
+        alt="NexCode"
+        class="logo-dark"
+      />
+      <img
+        src="./assets/image/logo.svg"
+        alt="NexCode"
+        class="logo-light"
+      />
+    </a>
+ 
+    <!-- DESKTOP NAV (скрывается на мобилке) -->
+    <nav class="nav-wrapper">
+      <ul class="nav">
+        <li>
+          <a href="#main" data-uz="Bosh sahifa" data-ru="Главная" class="active">Главная</a>
+        </li>
+        <li>
+          <a href="#about" data-ru="О нас" data-uz="Biz haqimizda">О нас</a>
+        </li>
+        <li>
+          <a href="#services" data-ru="Услуги" data-uz="Xizmatlar">Услуги</a>
+        </li>
+        <li>
+          <a href="#why-us" data-ru="Почему мы" data-uz="Nima uchun biz">Почему мы</a>
+        </li>
+        <li>
+          <a href="#workflow" data-ru="Как мы работаем" data-uz="Biz qanday ishlаymiz">Как мы работаем</a>
+        </li>
+        <li>
+          <a href="#faq-section" data-ru="FAQ" data-uz="FAQ">FAQ</a>
+        </li>
+        <li>
+          <a href="#contact" class="contact-btn" data-ru="Контакты" data-uz="Aloqa">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+ 
+    <div class="nav-btn">
+      <button class="lang-btn" id="langBtn">RU</button>
+      <button class="theme-btn" id="themeBtn">
+        <img id="themeIcon" src="./assets/icons/moon.svg" alt="theme" />
+      </button>
+      <!-- BURGER (только мобилка) -->
+      <button class="burger-btn" id="burgerBtn" aria-label="Меню" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+ 
+  <!-- МОБИЛЬНОЕ МЕНЮ -->
+  <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <ul>
+      <li>
+        <a href="#main" data-ru="Главная" data-uz="Bosh sahifa"><span class="mnav-num">01</span>Главная</a>
+      </li>
+      <li>
+        <a href="#about" data-ru="О нас" data-uz="Biz haqimizda"><span class="mnav-num">02</span>О нас</a>
+      </li>
+      <li>
+        <a href="#services" data-ru="Услуги" data-uz="Xizmatlar"><span class="mnav-num">03</span>Услуги</a>
+      </li>
+      <li>
+        
+        <a href="#why-us" data-ru="Почему мы" data-uz="Nima uchun biz"><span class="mnav-num">04</span>Почему мы</a>
+      </li>
+      <li>
+        <a href="#workflow" data-ru="Как мы работаем" data-uz="Biz qanday ishlаymiz"><span class="mnav-num">05</span>Как мы работаем</a>
+      </li>
+      <li>
+        <a href="#faq-section" data-ru="FAQ" data-uz="FAQ"><span class="mnav-num">06</span>FAQ</a>
+      </li>
+      <li>
+        <a href="#contact" data-ru="Контакты" data-uz="Aloqa"><span class="mnav-num">07</span>Контакты</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ======================= Главная ======================= -->
+<main class="main" id="main">
+<section class="main-content container">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="hero-inner">
+    <div class="main-content__about">
+      <div class="hero-badge">
+        <div class="badge-dot"></div>
+        <span
+          class="badge-text"
+          data-ru="IT-разработка под ключ"
+          data-uz="IT xizmatlarni to‘liq ishlab chiqish"
+        >
+          IT-разработка под ключ
+        </span>
+      </div>
+      <h1 class="main-title">
+        <span data-ru="Создаём" data-uz="Yaratamiz">Создаём</span><br />
+        <span class="word-switcher">
+          <span class="word active" data-ru="сайты" data-uz="saytlar"
+            >сайты</span
+          >
+          <span class="word" data-ru="приложения" data-uz="ilovalar"
+            >приложения</span
+          >
+          <span
+            class="word"
+            data-ru="Telegram-боты"
+            data-uz="Telegram-botlar"
+            >Telegram-боты</span
+          >
+          <span class="word" data-ru="IT-решения" data-uz="IT-yechimlar"
+            >IT-решения</span
+          > </span
+        ><br />
+        <span data-ru="для вашего бизнеса" data-uz="biznesingiz uchun"
+          >для вашего бизнеса</span
+        >
+      </h1>
+      <p
+        data-ru="Разработка сайтов, приложений и IT-сервисов под ключ"
+        data-uz="Saytlar, ilovalar va IT xizmatlarni ishlab chiqish"
+      >
+        Разработка сайтов, приложений и IT-сервисов под ключ
+      </p>
+      <div class="hero-actions">
+        <button
+          class="main-button"
+          data-ru="Связаться"
+          data-uz="Bog‘lanish"
+        >
+          Связаться
+        </button>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="terminal-wrap">
+        <div class="terminal">
+          <div class="t-bar">
+            <div class="t-dot t-red"></div>
+            <div class="t-dot t-yellow"></div>
+            <div class="t-dot t-green"></div>
+            <div class="t-tabs">
+              <div class="t-tab active">app.js</div>
+              <div class="t-tab">config.js</div>
+            </div>
+            <div class="t-spacer"></div>
+            <div class="t-status">running</div>
+          </div>
+          <div class="t-body">
+            <div class="t-gutter" id="gutter"></div>
+            <div class="t-code" id="codeArea"></div>
+          </div>
+          <div class="t-footer">
+            <div class="t-foot-item green">✓ deployed</div>
+            <div class="t-foot-item purple">v2.4.1</div>
+            <div class="t-foot-item">UTF-8</div>
+            <div class="t-foot-item">JavaScript</div>
+          </div>
+        </div>
+        <div class="float-badge">
+          <span class="check">✓</span>
+          <span> Build successful — 0.31s </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================= О Нас ======================= -->
+<section class="about" id="about">
+  <div class="container about-wrapper">
+    <div class="about-left">
+      <h2 data-ru="О нас" data-uz="Biz haqimizda">О нас</h2>
+      <p
+        class="about-text"
+        data-ru="NexCode — IT-команда из Ташкента, которая помогает бизнесу запускать, развивать и масштабировать цифровые продукты. Мы создаём современные сайты, приложения и автоматизированные решения, ориентированные на результат и удобство пользователей. Мы подходим к каждому проекту с фокусом на качество, скорость и реальные задачи клиента — от идеи до полноценного запуска и дальнейшего развития."
+        data-uz="NexCode — Toshkentdagi IT jamoa bo‘lib, bizneslarga raqamli mahsulotlarni yaratish, rivojlantirish va kengaytirishda yordam beradi. Biz zamonaviy saytlar, ilovalar va avtomatlashtirilgan tizimlar yaratamiz. Har bir loyihaga sifat, tezlik va mijoz vazifalariga e’tibor bilan yondashamiz."
+      >
+        NexCode — IT-команда из Ташкента, которая помогает бизнесу
+        запускать, развивать и масштабировать цифровые продукты. Мы
+        создаём современные сайты, приложения и автоматизированные
+        решения, ориентированные на результат и удобство пользователей. Мы
+        подходим к каждому проекту с фокусом на качество, скорость и
+        реальные задачи клиента — от идеи до полноценного запуска и
+        дальнейшего развития.
+      </p>
+      <ul class="about-list">
+        <li
+          data-ru="Индивидуальный подход к каждому проекту"
+          data-uz="Har bir loyiha uchun individual yondashuv"
+        >
+          Индивидуальный подход к каждому проекту
+        </li>
+        <li
+          data-ru="Современные технологии и актуальные решения"
+          data-uz="Zamonaviy texnologiyalar va dolzarb yechimlar"
+        >
+          Современные технологии и актуальные решения
+        </li>
+        <li
+          data-ru="Комплексная разработка под ключ"
+          data-uz="To‘liq turnkey ishlab chiqish"
+        >
+          Комплексная разработка под ключ
+        </li>
+        <li
+          data-ru="Поддержка и развитие после запуска"
+          data-uz="Ishga tushirgandan keyingi qo‘llab-quvvatlash"
+        >
+          Поддержка и развитие после запуска
+        </li>
+      </ul>
+    </div>
+    <div class="about-right">
+      <div class="circle big">
+        <img src="./assets/image/team1.jpg" alt="Команда NexCode" />
+      </div>
+      <div class="circle small top">
+        <img src="./assets/image/team2.jpg" alt="Команда NexCode" />
+      </div>
+      <div class="circle small right">
+        <img src="./assets/image/team3.jpg" alt="Команда NexCode" />
+      </div>
+      <div class="circle small left">
+        <img src="./assets/image/team4.jpg" alt="Команда NexCode" />
+      </div>
+      <div class="circle small bottom">
+        <img src="./assets/image/team5.jpg" alt="Команда NexCode" />
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================= Наши услуги =======================  -->
+<section class="services container" id="services">
+  <h2 data-ru="Наши услуги" data-uz="Bizning xizmatlar">Наши услуги</h2>
+  <div class="services-row">
+    <div class="service-card">
+      <span class="num">01</span>
+      <h3
+        data-ru="Веб-сайты и платформы"
+        data-uz="Veb-saytlar va platformalar"
+      >
+        Веб-сайты и платформы
+      </h3>
+      <p
+        data-ru="Современные и быстрые сайты с адаптацией под все устройства"
+        data-uz="Barcha qurilmalar uchun moslashtirilgan zamonaviy va tezkor saytlar"
+      >
+        Современные и быстрые сайты с адаптацией под все устройства
+      </p>
+      <ul class="small-list">
+        <li data-ru="Целевая страница" data-uz="Landing sahifa">
+          Целевая страница
+        </li>
+        <li data-ru="Электронная коммерция" data-uz="Elektron tijorat">
+          Электронная коммерция
+        </li>
+        <li
+          data-ru="Корпоративный веб-сайт"
+          data-uz="Korporativ veb-sayt"
+        >
+          Корпоративный веб-сайт
+        </li>
+        <li data-ru="Веб-платформа" data-uz="Veb-platforma">
+          Веб-платформа
+        </li>
+      </ul>
+    </div>
+    <div class="service-card">
+      <span class="num">02</span>
+      <h3
+        data-ru="Создание Telegram-ботов"
+        data-uz="Telegram bot yaratish"
+      >
+        Создание Telegram-ботов
+      </h3>
+      <p
+        data-ru="Умные Telegram-боты для вашего бизнеса — автоматические ответы, заказы, платежи и многое другое."
+        data-uz="Biznes uchun aqlli Telegram botlar — avtomatik javoblar, buyurtmalar va to‘lovlar."
+      >
+        Умные Telegram-боты для вашего бизнеса — автоматические ответы,
+        заказы, платежи и многое другое.
+      </p>
+      <ul class="small-list">
+        <li data-ru="Торговый бот" data-uz="Savdo boti">Торговый бот</li>
+        <li data-ru="Бот поддержки" data-uz="Qo‘llab-quvvatlash boti">
+          Бот поддержки
+        </li>
+        <li data-ru="Интеграция платежей" data-uz="To‘lov integratsiyasi">
+          Интеграция платежей
+        </li>
+        <li data-ru="Панель администратора" data-uz="Admin panel">
+          Панель администратора
+        </li>
+      </ul>
+    </div>
+    <div class="service-card">
+      <span class="num">03</span>
+      <h3 data-ru="Корпоративные системы" data-uz="Korporativ tizimlar">
+        Корпоративные системы
+      </h3>
+      <p
+        data-ru="Внутренние платформы и инструменты для автоматизации бизнес-процессов вашей компании."
+        data-uz="Biznes jarayonlarini avtomatlashtirish uchun ichki platformalar va tizimlar."
+      >
+        Внутренние платформы и инструменты для автоматизации
+        бизнес-процессов вашей компании.
+      </p>
+      <ul class="small-list">
+        <li
+          data-ru="Мини-приложение Telegram"
+          data-uz="Telegram mini-ilovasi"
+        >
+          Мини-приложение Telegram
+        </li>
+        <li
+          data-ru="Система управления персоналом"
+          data-uz="Xodimlarni boshqarish tizimi"
+        >
+          Система управления персоналом
+        </li>
+        <li data-ru="Внутренний портал" data-uz="Ichki portal">
+          Внутренний портал
+        </li>
+        <li data-ru="Панель управления" data-uz="Boshqaruv paneli">
+          Панель управления
+        </li>
+      </ul>
+    </div>
+    <div class="service-card">
+      <span class="num">04</span>
+      <h3
+        data-ru="Автоматизация процессов"
+        data-uz="Jarayonlarni avtomatlashtirish"
+      >
+        Автоматизация процессов
+      </h3>
+      <p
+        data-ru="Автоматизируйте повторяющиеся задачи — экономьте время, уменьшайте количество ошибок и повышайте эффективность."
+        data-uz="Takrorlanuvchi vazifalarni avtomatlashtiring va samaradorlikni oshiring."
+      >
+        Автоматизируйте повторяющиеся задачи — экономьте время, уменьшайте
+        количество ошибок и повышайте эффективность.
+      </p>
+      <ul class="small-list">
+        <li
+          data-ru="Автоматизация рабочих процессов"
+          data-uz="Workflow avtomatlashtirish"
+        >
+          Автоматизация рабочих процессов
+        </li>
+        <li data-ru="Отправка email/SMS" data-uz="Email/SMS yuborish">
+          Отправка email/SMS
+        </li>
+        <li data-ru="Создание отчётов" data-uz="Hisobot yaratish">
+          Создание отчётов
+        </li>
+        <li data-ru="Управление расписанием" data-uz="Jadval boshqaruvi">
+          Управление расписанием
+        </li>
+      </ul>
+    </div>
+    <div class="service-card">
+      <span class="num">05</span>
+      <h3
+        data-ru="Оцифровка и онлайн-публикация"
+        data-uz="Biznesni raqamlashtirish"
+      >
+        Оцифровка и онлайн-публикация
+      </h3>
+      <p
+        data-ru="Мы переведём ваш офлайн-бизнес в онлайн-мир — с помощью полной цифровизации и современных решений."
+        data-uz="Biznesingizni zamonaviy digital yechimlar orqali onlayn olib chiqamiz."
+      >
+        Мы переведём ваш офлайн-бизнес в онлайн-мир — с помощью полной
+        цифровизации и современных решений.
+      </p>
+      <ul class="small-list">
+        <li data-ru="Бизнес-анализ" data-uz="Biznes tahlil">
+          Бизнес-анализ
+        </li>
+        <li data-ru="Онлайн-продажи" data-uz="Onlayn savdo">
+          Онлайн-продажи
+        </li>
+        <li data-ru="Цифровая стратегия" data-uz="Digital strategiya">
+          Цифровая стратегия
+        </li>
+        <li
+          data-ru="Интеграция маркетинга"
+          data-uz="Marketing integratsiyasi"
+        >
+          Интеграция маркетинга
+        </li>
+      </ul>
+    </div>
+    <div class="service-card">
+      <span class="num">06</span>
+      <h3
+        data-ru="Интеграция сервисов и систем"
+        data-uz="Servis va tizim integratsiyasi"
+      >
+        Интеграция сервисов и систем
+      </h3>
+      <p
+        data-ru="Создайте единую и эффективную экосистему, объединив различные сервисы."
+        data-uz="Turli servislarni yagona samarali ekotizimga birlashtiring."
+      >
+        Создайте единую и эффективную экосистему, объединив различные
+        сервисы.
+      </p>
+      <ul class="small-list">
+        <li data-ru="Интеграция API" data-uz="API integratsiyasi">
+          Интеграция API
+        </li>
+        <li data-ru="Платёжные системы" data-uz="To‘lov tizimlari">
+          Платёжные системы
+        </li>
+        <li data-ru="Подключение к CRM/ERP" data-uz="CRM/ERP ulash">
+          Подключение к CRM/ERP
+        </li>
+        <li data-ru="1C интеграция" data-uz="1C integratsiyasi">
+          1C интеграция
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- ======================= Почему выбирают нас ========================= -->
+<section class="why-us container" id="why-us">
+  <div class="why-us-grid-bg"></div>
+  <h2 data-ru="Почему выбирают нас" data-uz="Nima uchun bizni tanlashadi">
+    Почему выбирают <span>нас</span>
+  </h2>
+  <div class="compare-table">
+    <div class="compare-head">
+      <div data-ru="Что важно" data-uz="Muhim jihatlar">Что важно</div>
+      <div data-ru="Мы" data-uz="Biz">Мы</div>
+      <div data-ru="Другие студии" data-uz="Boshqa studiyalar">
+        Другие студии
+      </div>
+    </div>
+    <div class="compare-row">
+      <div data-ru="01 Фокус на результате" data-uz="01 Natijaga e’tibor">
+        <span class="row-num">01</span> Фокус на результате
+      </div>
+      <div class="good" data-ru="всегда" data-uz="har doim">всегда</div>
+      <div class="bad" data-ru="— не всегда" data-uz="— har doim emas">
+        — не всегда
+      </div>
+    </div>
+    <div class="compare-row">
+      <div
+        data-ru="02 Прозрачное ценообразование"
+        data-uz="02 Shaffof narxlash"
+      >
+        <span class="row-num">02</span> Прозрачное ценообразование
+      </div>
+      <div
+        class="good"
+        data-ru="фиксированная цена"
+        data-uz="qat’iy narx"
+      >
+        фиксированная цена
+      </div>
+      <div
+        class="bad"
+        data-ru="— скрытые надбавки"
+        data-uz="— yashirin to‘lovlar"
+      >
+        — скрытые надбавки
+      </div>
+    </div>
+    <div class="compare-row">
+      <div data-ru="03 Соблюдение сроков" data-uz="03 Muddatlarga rioya">
+        <span class="row-num">03</span> Соблюдение сроков
+      </div>
+      <div class="good" data-ru="по договору" data-uz="shartnoma asosida">
+        по договору
+      </div>
+      <div
+        class="bad"
+        data-ru="— часто затягивают"
+        data-uz="— ko‘pincha cho‘ziladi"
+      >
+        — часто затягивают
+      </div>
+    </div>
+    <div class="compare-row">
+      <div
+        data-ru="04 Современный стек"
+        data-uz="04 Zamonaviy texnologiyalar"
+      >
+        <span class="row-num">04</span> Современный стек
+      </div>
+      <div
+        class="good"
+        data-ru="всегда актуальный"
+        data-uz="doimo zamonaviy"
+      >
+        всегда актуальный
+      </div>
+      <div
+        class="bad"
+        data-ru="— устаревшие решения"
+        data-uz="— eskirgan yechimlar"
+      >
+        — устаревшие решения
+      </div>
+    </div>
+    <div class="compare-row">
+      <div
+        data-ru="05 Поддержка после запуска"
+        data-uz="05 Ishga tushgandan keyingi qo‘llab-quvvatlash"
+      >
+        <span class="row-num">05</span> Поддержка после запуска
+      </div>
+      <div class="good" data-ru="включена" data-uz="kiritilgan">
+        включена
+      </div>
+      <div
+        class="bad"
+        data-ru="— отдельно оплачивается"
+        data-uz="— alohida to‘lanadi"
+      >
+        — отдельно оплачивается
+      </div>
+    </div>
+    <div class="compare-row">
+      <div
+        data-ru="06 Индивидуальный подход"
+        data-uz="06 Individual yondashuv"
+      >
+        <span class="row-num">06</span> Индивидуальный подход
+      </div>
+      <div
+        class="good"
+        data-ru="каждый проект уникален"
+        data-uz="har bir loyiha noyob"
+      >
+        каждый проект уникален
+      </div>
+      <div
+        class="bad"
+        data-ru="— шаблонные решения"
+        data-uz="— shablon yechimlar"
+      >
+        — шаблонные решения
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================== Мини СТА ============================ -->
+<section class="mini-cta container">
+  <div class="mini-cta-card">
+    <div class="mini-cta-glow"></div>
+    <div class="mini-cta-particles"></div>
+    <div class="mini-cta-content">
+      <div class="mini-cta-left">
+        <span
+          class="mini-badge"
+          data-ru="Свободны для новых проектов"
+          data-uz="Yangi loyihalar uchun ochiqmiz">
+          Свободны для новых проектов
+        </span>
+        <h2
+          data-ru="Есть идея проекта, которую хочется реализовать?"
+          data-uz="Amalga oshirmoqchi bo‘lgan loyiha g‘oyangiz bormi?"
+        >
+          Есть идея проекта,
+          <span>которую хочется реализовать?</span>
+        </h2>
+        <p
+          data-ru="Создаем современные digital-решения с акцентом на скорость, дизайн и результат."
+          data-uz="Tezlik, dizayn va natijaga yo‘naltirilgan zamonaviy digital yechimlar yaratamiz.">
+          Создаем современные digital-решения с акцентом на скорость,
+          дизайн и результат.
+        </p>
+      </div>
+      <div class="mini-cta-right">
+        <a href="#contact" class="mini-cta-btn">
+          <span
+            data-ru="Обсудить проект"
+            data-uz="Loyihani muhokama qilish">
+            Обсудить проект
+          </span>
+          <svg width="20" height="20" viewBox="0 0 24 24">
+            <path
+              d="M7 17L17 7M17 7H8M17 7V16"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======================= Как мы рабоатем ======================= -->
+<section class="workflow container" id="workflow">
+  <h2 data-ru="Как мы работаем?" data-uz="Biz qanday ishlaymiz?">
+    Как мы работаем?
+  </h2>
+  <div class="workflow-row">
+    <div class="step-card">
+      <span class="num">01</span>
+      <h3 data-ru="Брифинг и анализ" data-uz="Brifing va tahlil">
+        Брифинг и анализ
+      </h3>
+      <p
+        data-ru="Изучаем ваш бизнес, цели и задачи, чтобы предложить оптимальное решение."
+        data-uz="Biznesingiz, maqsadlaringiz va vazifalaringizni o‘rganib eng yaxshi yechimni taklif qilamiz."
+      >
+        Изучаем ваш бизнес, цели и задачи, чтобы предложить оптимальное
+        решение.
+      </p>
+    </div>
+    <div class="step-card">
+      <span class="num">02</span>
+      <h3 data-ru="Проектирование" data-uz="Loyihalash">
+        Проектирование
+      </h3>
+      <p
+        data-ru="Создаём структуру и продумываем UX, чтобы продукт был удобным и понятным."
+        data-uz="Mahsulot qulay va tushunarli bo‘lishi uchun struktura va UX ishlab chiqamiz."
+      >
+        Создаём структуру и продумываем UX, чтобы продукт был удобным и
+        понятным.
+      </p>
+    </div>
+    <div class="step-card">
+      <span class="num">03</span>
+      <h3 data-ru="Разработка" data-uz="Dasturlash">Разработка</h3>
+      <p
+        data-ru="Реализуем проект: пишем код, подключаем сервисы и настраиваем систему."
+        data-uz="Loyihani ishlab chiqamiz: kod yozamiz, servislarni ulaymiz va tizimni sozlaymiz."
+      >
+        Реализуем проект: пишем код, подключаем сервисы и настраиваем
+        систему.
+      </p>
+    </div>
+  </div>
+  <div class="workflow-row bottom">
+    <div class="step-card">
+      <span class="num">04</span>
+      <h3 data-ru="Тестирование" data-uz="Testlash">Тестирование</h3>
+      <p
+        data-ru="Проверяем стабильность, скорость и корректную работу на всех устройствах."
+        data-uz="Barcha qurilmalarda barqarorlik, tezlik va to‘g‘ri ishlashni tekshiramiz."
+      >
+        Проверяем стабильность, скорость и корректную работу на всех
+        устройствах.
+      </p>
+    </div>
+    <div class="step-card">
+      <span class="num">05</span>
+      <h3 data-ru="Запуск" data-uz="Ishga tushirish">Запуск</h3>
+      <p
+        data-ru="Запускаем проект и помогаем вам эффективно использовать продукт."
+        data-uz="Loyihani ishga tushiramiz va mahsulotdan samarali foydalanishga yordam beramiz."
+      >
+        Запускаем проект и помогаем вам эффективно использовать продукт.
+      </p>
+    </div>
+  </div>
+</section>
+<!-- =========================== FAQ ============================== -->
+<section class="faq-section container" id="faq-section">
+  <div class="faq-header">
+    <div
+      class="faq-badge"
+      data-ru="Поддержка"
+      data-uz="Qo‘llab-quvvatlash"
+    >
+      <span class="badge-dot"></span>
+      Поддержка
+    </div>
+    <h2
+      class="faq-title"
+      data-ru="Часто задаваемые вопросы"
+      data-uz="Ko‘p beriladigan savollar"
+    >
+      Часто задаваемые <span>вопросы</span>
+    </h2>
+    <p
+      class="faq-subtitle"
+      data-ru="Смотрите — клиенты уже спрашивали об этом"
+      data-uz="Mijozlar allaqachon shu savollarni bergan"
+    >
+      Смотрите — клиенты уже спрашивали об этом
+    </p>
+  </div>
+  <div class="chat-window">
+    <div class="chat-topbar">
+      <div class="chat-avatar">NC</div>
+      <div>
+        <div
+          class="chat-name"
+          data-ru="Nex Code Support"
+          data-uz="Nex Code Support"
+        >
+          NexCode Support
+        </div>
+        <div class="chat-status" data-ru="онлайн" data-uz="online">
+          <span class="status-dot"></span>
+          онлайн
+        </div>
+      </div>
+    </div>
+    <div class="date-bar">
+      <div class="date-divider" data-ru="Сегодня" data-uz="Bugun">
+        Сегодня
+      </div>
+    </div>
+    <div class="chat-body" id="chatBody">
+      <div class="chat-spacer"></div>
+    </div>
+    <div class="chat-input-row">
+      <div
+        class="chat-input-fake"
+        data-ru="Напишите вопрос..."
+        data-uz="Savol yozing..."
+      >
+        Напишите вопрос...
+      </div>
+      <div class="send-btn">
+        <svg viewBox="0 0 24 24">
+          <path d="M2 21l21-9L2 3v7l15 2-15 2z" />
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ====================== Отзывы ====================== -->
+<section class="reviews container">
+  <h2 data-ru="Отзывы" data-uz="Sharhlar">Отзывы</h2>
+  <div class="reviews-wrapper">
+    <button class="reviews-btn prev" aria-label="Предыдущий отзыв">
+      ‹
+    </button>
+    <div class="reviews-viewport">
+      <div class="reviews-track">
+        <div class="review-card">
+          <p
+            class="review-text"
+            data-ru="Проект выполнен качественно с учётом всех требований. Команда внимательно отнеслась к деталям и быстро вносила правки. Мы остались довольны проделанной работой."
+            data-uz="Loyiha barcha talablar asosida sifatli bajarildi. Jamoa tafsilotlarga e’tibor berdi va o‘zgarishlarni tez amalga oshirdi."
+          >
+            Проект выполнен качественно с учётом всех требований. Команда
+            внимательно отнеслась к деталям и быстро вносила правки. Мы
+            остались довольны проделанной работой.
+          </p>
+          <div class="review-footer">
+            <div>
+              <strong> Нигматуллин Р.А. </strong>
+              <span
+                data-ru="Начальник отдела PR"
+                data-uz="PR bo‘lim boshlig‘i"
+              >
+                Начальник отдела PR
+              </span>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <p
+            class="review-text"
+            data-ru="Работа выполнена в срок и без сложностей. Команда вовлечена в процесс и действительно разбирается в задаче. Планируем продолжать сотрудничество."
+            data-uz="Ish o‘z vaqtida va muammosiz bajarildi. Jamoa jarayonga faol jalb qilindi va vazifani yaxshi tushundi."
+          >
+            Работа выполнена в срок и без сложностей. Команда вовлечена в
+            процесс и действительно разбирается в задаче. Планируем
+            продолжать сотрудничество.
+          </p>
+          <div class="review-footer">
+            <div>
+              <strong> Шукуров И.С. </strong>
+              <span data-ru="Директор" data-uz="Direktor">
+                Директор
+              </span>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <p
+            class="review-text"
+            data-ru="Мы полностью довольны оперативностью и клиентоориентированностью компании. Отдельно отмечаем качество выполненных работ и профессиональный подход."
+            data-uz="Kompaniyaning tezkorligi va mijozlarga yondashuvidan to‘liq mamnunmiz. Ish sifati va professional yondashuv alohida e’tiborga loyiq."
+          >
+            Мы полностью довольны оперативностью и
+            клиентоориентированностью компании. Отдельно отмечаем качество
+            выполненных работ и профессиональный подход.
+          </p>
+          <div class="review-footer">
+            <div>
+              <strong> Aliyev A. </strong>
+              <span data-ru="CEO" data-uz="CEO"> CEO </span>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <p
+            class="review-text"
+            data-ru="Отличный опыт работы. Быстрая коммуникация, понятный процесс, оперативные ответы и грамотные решения. Итоговый продукт полностью оправдал ожидания и даже больше."
+            data-uz="Ajoyib hamkorlik tajribasi. Tezkor aloqa, tushunarli jarayon va professional yechimlar. Yakuniy mahsulot barcha kutganimizni oqladi va undan ham yaxshiroq bo‘ldi."
+          >
+            Отличный опыт работы. Быстрая коммуникация, понятный процесс,
+            оперативные ответы и грамотные решения. Итоговый продукт
+            полностью оправдал ожидания и даже больше.
+          </p>
+          <div class="review-footer">
+            <div>
+              <strong> Karimov D. </strong>
+              <span data-ru="Manager" data-uz="Menejer"> Manager </span>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-card">
+          <p
+            class="review-text"
+            data-ru="Команда показала высокий уровень экспертизы и соблюдение сроков. Все задачи были реализованы быстро и без лишних сложностей."
+            data-uz="Jamoa yuqori darajadagi tajriba va muddatlarga rioya qilishni ko‘rsatdi. Barcha vazifalar tez va muammosiz bajarildi."
+          >
+            Команда показала высокий уровень экспертизы и соблюдение
+            сроков. Все задачи были реализованы быстро и без лишних
+            сложностей.
+          </p>
+          <div class="review-footer">
+            <div>
+              <strong> Usmanov S. </strong>
+              <span data-ru="Founder" data-uz="Asoschi"> Founder </span>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="reviews-btn next" aria-label="Следующий отзыв">
+      ›
+    </button>
+  </div>
+</section>
+
+<!-- ====================== Связаться с нами ======================  -->
+<section class="contact container" id="contact">
+  <div class="contact-box">
+    <div class="contact-glow"></div>
+    <div class="contact-grid"></div>
+    <div class="contact-content">
+      <div class="contact-left">
+        <span
+          class="contact-badge"
+          data-ru="✦ Давайте обсудим ваш проект"
+          data-uz="✦ Loyihangizni muhokama qilaylik"
+        >
+          ✦ Давайте обсудим ваш проект
+        </span>
+        <h2 data-ru="Связаться с нами" data-uz="Biz bilan bog‘laning">
+          Связаться
+          <span>с нами</span>
+        </h2>
+        <p
+          data-ru="Создаем современные digital-решения, которые выглядят дорого, работают быстро и помогают бизнесу расти."
+          data-uz="Biznesingiz o‘sishiga yordam beradigan zamonaviy digital yechimlar yaratamiz."
+        >
+          Создаем современные digital-решения, которые выглядят дорого,
+          работают быстро и помогают бизнесу расти.
+        </p>
+        <div class="contact-features">
+          <div
+            class="contact-feature"
+            data-ru="Ответим в течение 30 минут"
+            data-uz="30 daqiqa ichida javob beramiz"
+          >
+            <div class="feature-dot"></div>
+            Ответим в течение 30 минут
+          </div>
+          <div
+            class="contact-feature"
+            data-ru="Бесплатная консультация"
+            data-uz="Bepul konsultatsiya"
+          >
+            <div class="feature-dot"></div>
+            Бесплатная консультация
+          </div>
+          <div
+            class="contact-feature"
+            data-ru="Работаем по всему миру"
+            data-uz="Butun dunyo bo‘ylab ishlaymiz"
+          >
+            <div class="feature-dot"></div>
+            Работаем по всему миру
+          </div>
+        </div>
+      </div>
+      <form class="contact-form">
+        <div class="input-group">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            data-placeholder-ru="Ваше имя"
+            data-placeholder-uz="Ismingiz"
+            placeholder="Ваше имя"
+          />
+        </div>
+        <div class="input-group">
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            data-placeholder-ru="Телефон"
+            data-placeholder-uz="Telefon"
+            placeholder="Телефон"
+          />
+        </div>
+        <div class="input-group">
+          <textarea
+            data-placeholder-ru="Расскажите о проекте"
+            data-placeholder-uz="Loyihangiz haqida yozing"
+            placeholder="Расскажите о проекте"
+          ></textarea>
+        </div>
+        <button type="submit">
+          <span data-ru="Отправить заявку" data-uz="So‘rov yuborish">
+            Отправить заявку
+          </span>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="footer" id="footer">
+  <div class="footer-grid-bg"></div>
+  <div class="footer-orb footer-orb-1"></div>
+  <div class="footer-orb footer-orb-2"></div>
+  <div class="footer-line"></div>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="footer-logo">
+          <img
+            src="./assets/image/logo.svg"
+            alt="NexCode"
+            class="logo-dark"
+          />
+          <img
+            src="./assets/image/logo.svg"
+            alt="NexCode"
+            class="logo-light"
+          />
+        </a>
+        <p
+          class="footer-desc"
+          data-ru="IT-команда, создающая современные цифровые продукты с фокусом на дизайн, скорость и результат."
+          data-uz="Dizayn, tezlik va natijaga yo‘naltirilgan zamonaviy digital mahsulotlar yaratuvchi IT jamoa."
+        >
+          IT-команда, создающая современные цифровые продукты с фокусом на
+          дизайн, скорость и результат.
+        </p>
+      </div>
+      <div class="footer-column">
+        <h4 data-ru="Навигация" data-uz="Navigatsiya">Навигация</h4>
+        <div class="footer-links">
+          <a href="#main" data-ru="Главная" data-uz="Bosh sahifa">
+            Главная
+          </a>
+          <a href="#about" data-ru="О нас" data-uz="Biz haqimizda">
+            О нас
+          </a>
+          <a href="#services" data-ru="Услуги" data-uz="Xizmatlar">
+            Услуги
+          </a>
+          <a href="#why-us" data-ru="Почему мы" data-uz="Nima uchun biz">
+            Почему мы
+          </a>
+          <a
+            href="#workflow"
+            data-ru="Как мы работаем"
+            data-uz="Biz qanday ishlаymiz"
+          >
+            Как мы работаем
+          </a>
+          <a href="#faq-section" data-ru="FAQ" data-uz="FAQ"> FAQ </a>
+          <a
+            href="#contact"
+            class="contact-btn"
+            data-ru="Контакты"
+            data-uz="Aloqa"
+          >
+            Контакты
+          </a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h4 data-ru="Услуги" data-uz="Xizmatlar">Услуги</h4>
+        <div class="footer-links">
+          <a href="#" data-ru="Веб-сайты" data-uz="Veb-saytlar">
+            Веб-сайты
+          </a>
+          <a
+            href="#"
+            data-ru="Мобильные приложения"
+            data-uz="Mobil ilovalar"
+          >
+            Мобильные приложения
+          </a>
+          <a href="#" data-ru="Telegram-боты" data-uz="Telegram botlar">
+            Telegram-боты
+          </a>
+          <a href="#" data-ru="UI/UX Design" data-uz="UI/UX Dizayn">
+            UI/UX Design
+          </a>
+          <a href="#" data-ru="Автоматизация" data-uz="Avtomatlashtirish">
+            Автоматизация
+          </a>
+        </div>
+      </div>
+      <div class="footer-column footer-contact-column">
+        <h4 data-ru="Контакты" data-uz="Kontaktlar">Контакты</h4>
+        <div class="footer-contact">
+          <p data-ru="Ташкент, Узбекистан" data-uz="Toshkent, O‘zbekiston">
+            Ташкент, Узбекистан
+          </p>
+          <a href="mailto:nexcodeuz@gmail.com" class="footer-email">
+            nexcodeuz@gmail.com
+          </a>
+          <p>+998 95 000 95 05</p>
+        </div>
+        <div class="footer-socials">
+    <a href="https://www.instagram.com/nexcode.uz?igsh=ejUzNWtkYWJ0YzJh&utm_source=qr">
+        <img src="./assets/icons/instagram.svg" alt="instagram" />
+    </a>
+
+    <a href="https://t.me/sh_fayziyev7" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/icons/telegram.svg" alt="Telegram" />
+    </a>
+
+    <a href="#">
+        <img src="./assets/icons/facebook.svg" alt="facebook" />
+    </a>
+</div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p
+        data-ru="© 2026 Nex Code. Все права защищены."
+        data-uz="© 2026 Nex Code. Barcha huquqlar himoyalangan.">
+        © 2026 NexCode. Все права защищены.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
+<script src="./js/script.js" defer></script>
+  
+</body>
+</html>

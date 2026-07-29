@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="84 36 579 101" width="579" height="101" style="background:transparent">
+  <rect x="84" y="36" width="579" height="101" fill="none"/>
+  <defs>
+    <linearGradient id="nexGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c5fff"/>
+      <stop offset="100%" stop-color="#3eb4ff"/>
+    </linearGradient>
+  </defs>
+  <text x="80" y="130" font-family="Manrope, 'Arial Black', Arial, sans-serif" font-size="115" font-weight="900" fill="url(#nexGrad2)">Nex</text>
+  <text x="340" y="130" font-family="Manrope, 'Arial Black', Arial, sans-serif" font-size="115" font-weight="900" fill="#FFFFFF">Code</text>
+</svg>
